@@ -54,7 +54,7 @@ E.g. an integer like 00010000. If we subtract 1 from the number, we'll get 00001
       
       return sum <= 1;
    
-#### Solution #1:
+#### Solution #2:
     boolean is PermutationOfPalindrome(String phrase) {
       int bitVector = createBitVector(phrase);
       return bitVector == 0 || checkExactlyOneBitSet(bitVector);
