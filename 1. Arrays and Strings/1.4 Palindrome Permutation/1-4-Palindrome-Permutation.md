@@ -31,8 +31,9 @@ We can use a single integer (as a bit vector). When we see a letter, we map it t
 We can easily check that no bits in the integer are 1: just compare the integer to 0. There is actually a very elegant way to check that an integer has exactly one bit set to 1.
 
 E.g. an integer like 00010000. If we subtract 1 from the number, we'll get 00001111. We can check to see that a number has exactly one 1 because if we subtract 1 from it and then AND it with the new number, we should get 0.
-        00010000 - 1 = 00001111
-        00010000 & 00001111 = 0
+
+    00010000 - 1 = 00001111
+    00010000 & 00001111 = 0
 
 
 ### Codes
