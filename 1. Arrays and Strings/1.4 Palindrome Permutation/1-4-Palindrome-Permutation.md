@@ -1,11 +1,9 @@
 ## QUESTION
 Palindrome Permutation: Given a string, write a function to check if it is a permutation of a palindrome. A palindrome is a word or phrase that us the same forwards and backwards. A permutation is a rerrangement of letters. The palindrome does not need to limited to just dictionary words.
 
-Example:
-
-Input:   Tact Coa
-
-Output:  True (permutations: "taco cat", "atco cta", etc.)
+    Example:
+    Input:   Tact Coa
+    Output:  True (permutations: "taco cat", "atco cta", etc.)
 
 
 ## HINTS
@@ -33,10 +31,8 @@ We can use a single integer (as a bit vector). When we see a letter, we map it t
 We can easily check that no bits in the integer are 1: just compare the integer to 0. There is actually a very elegant way to check that an integer has exactly one bit set to 1.
 
 E.g. an integer like 00010000. If we subtract 1 from the number, we'll get 00001111. We can check to see that a number has exactly one 1 because if we subtract 1 from it and then AND it with the new number, we should get 0.
-
-00010000 - 1 = 00001111
-
-00010000 & 00001111 = 0
+    00010000 - 1 = 00001111
+    00010000 & 00001111 = 0
 
 
 ### Codes
