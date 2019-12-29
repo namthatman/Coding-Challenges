@@ -7,6 +7,7 @@ Try thinking about it layer by layer. Rotating a specific layer would just mean 
 ## SOLUTION
 ### Idea
 Perform a circular rotation on each layer, moving the top edge to the right, the right edge to the bottom, the bottom edge to the left, and the left edge to the top. Swap index by index.
+    
     for i = 0 to n
       temp = top[i];
       top[i] = left[i];
